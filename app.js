@@ -60,15 +60,17 @@ Write a function called sumArray() that takes in an array of numbers as its argu
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-function sumArray(testArray[]) {
-  for (i = 0, i++, i <= testArray.length) {
-    sum += testArray[i];
-  }
-  // var sum = x + y + z;
-  // var string = x + ',' + y + ',' + z + ' was passed in as an array of numbers, and ' + sum + ' is their sum.';
-  // return [sum, string];
-  return sum;
-};
+var sum = 0;
+
+function sumArray(testArray) {
+	//var x = testArray.length;
+	for (var i = 0; i < testArray.length; i++) {
+		sum += testArray[i];
+	}
+	var string = testArray.toString() + ' was passed in as an array of numbers, and ' + sum + ' is their sum.'
+  	return [sum, string];
+}
+
 
 testArray = [2,3,4];
 
@@ -84,11 +86,16 @@ Write a function called multiplyArray() that takes an array of numbers as its ar
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray([x,y,z]) {
-  var product = x * y * z;
-  var string = 'The numbers ' + x + ',' + y + ',' + z + ' have a product of ' + product + '.';
-  return [product, string];
-};
+var product = 1;
+
+function multiplyArray(testArray) {
+	//var x = testArray.length;
+	for (var i = 0; i < testArray.length; i++) {
+		product *= testArray[i];
+	}
+	var string = 'The numbers ' + testArray.toString() + ' have a product of ' + product + '.'
+  	return [product, string];
+}
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(testArray);
 
