@@ -62,12 +62,11 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var sum = 0;
 
-function sumArray(testArray) {
-	//var x = testArray.length;
-	for (var i = 0; i < testArray.length; i++) {
-		sum += testArray[i];
+function sumArray(arguments) {
+	for (var i = 0; i < arguments.length; i++) {
+		sum += arguments[i];
 	}
-	var string = testArray.toString() + ' was passed in as an array of numbers, and ' + sum + ' is their sum.'
+	var string = arguments.toString() + ' was passed in as an array of numbers, and ' + sum + ' is their sum.'
   	return [sum, string];
 }
 
