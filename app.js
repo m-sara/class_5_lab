@@ -88,13 +88,13 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var product = 1;
 
-function multiplyArray(testArray) {
-	//var x = testArray.length;
-	for (var i = 0; i < testArray.length; i++) {
-		product *= testArray[i];
+function multiplyArray(arguments) {
+	for (var i = 0; i < arguments.length; i++) {
+		product *= arguments[i];
 	}
-	var string = 'The numbers ' + testArray.toString() + ' have a product of ' + product + '.'
+	var string = 'The numbers ' + arguments.toString() + ' have a product of ' + product + '.';
   	return [product, string];
+  	console.log([product, string]);
 }
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(testArray);
