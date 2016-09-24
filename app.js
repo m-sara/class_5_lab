@@ -60,10 +60,14 @@ Write a function called sumArray() that takes in an array of numbers as its argu
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-function sumArray([x,y,z]) {
-  var sum = x + y + z;
-  var string = x + ',' + y + ',' + z + ' was passed in as an array of numbers, and ' + sum + ' is their sum.';
-  return [sum, string];
+function sumArray(testArray[]) {
+  for (i = 0, i++, i <= testArray.length) {
+    sum += testArray[i];
+  }
+  // var sum = x + y + z;
+  // var string = x + ',' + y + ',' + z + ' was passed in as an array of numbers, and ' + sum + ' is their sum.';
+  // return [sum, string];
+  return sum;
 };
 
 testArray = [2,3,4];
