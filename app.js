@@ -22,7 +22,7 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-var multiply = function(x, y) {
+function multiply(x, y) {
   var product = x * y;
   var string = 'The product of ' + x + ' and ' + y + ' is ' + product + '.';
   return [product, string];
@@ -41,7 +41,13 @@ Fourth element: "The product of 4 and 7 and 5 is 140."
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-
+function sumAndMultiply(x, y, z) {
+  var sum = x + y + z;
+  var product = x * y * z;
+  var string1 = x + ' and ' + y + ' and ' + z + ' sum to ' + sum + '.';
+  var string2 = 'The product of ' + x + ' and ' + y + ' and ' + z + ' is ' + product + '.';
+  return [sum, product, string1, string2];
+}
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
 
